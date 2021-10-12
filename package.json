@@ -1,0 +1,19 @@
+{
+  "name": "javascript-algorithms",
+  "version": "1.0.0",
+  "description": "This repository is just to create and test some algorithms using javascript",
+  "main": "utils.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miltonvelillac/javascript-algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miltonvelillac/javascript-algorithms/issues"
+  },
+  "homepage": "https://github.com/miltonvelillac/javascript-algorithms#readme"
+}
