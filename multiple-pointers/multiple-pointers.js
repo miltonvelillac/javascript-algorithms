@@ -29,10 +29,29 @@ function sumZeroRefactor(array) {
     }
 }
 
+
 function validMultiplePointers() {
     const dataArray = document.getElementById('dataArray').value;
     if(!dataArray) { return; }
     // let result = sumZero(dataArray.split(','));
-    let result = sumZeroRefactor(dataArray.split(',')); // the array should be in asc order
+    const result = sumZeroRefactor(dataArray.split(',')); // the array should be in asc order
     document.getElementById('testMultiplePointers').innerText = result;
+}
+
+/******************************************** COUNT UNIT VALUES ******************/
+
+function countUniqValues(array){
+    const lookup = {};
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        lookup[element] = 1;
+    }
+    return Object.keys(lookup).length;
+}
+
+function validCountUniqValues() {
+    const array = document.getElementById('countUniqArray').value;
+    const arrayNumber = !array ? [] : array.split(',').map(data => Number(data));
+    const result = countUniqValues(arrayNumber);
+    document.getElementById('countUniqArrayResult').innerText = result;
 }
